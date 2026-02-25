@@ -139,7 +139,6 @@ E_W_ROUTINEs_128K_ver_2.2.s19  ← 버전 2.2용 (352바이트)
 python_fw_flash/
 ├── flash_stm8_gui.py              # 메인 프로그램
 ├── E_W_ROUTINEs_128K_ver_2.2.s19 # EW Routines (부트로더 v2.2)
-├── marine_logo.png                # 로고 이미지
 └── README.md
 ```
 
@@ -160,7 +159,7 @@ python_fw_flash/
 ## PyInstaller 빌드
 
 ```bash
-pyinstaller --onefile --windowed --add-data "marine_logo.png;." --add-data "E_W_ROUTINEs_128K_ver_2.2.s19;." flash_stm8_gui.py
+pyinstaller --onefile --windowed --add-data "E_W_ROUTINEs_128K_ver_2.2.s19;." flash_stm8_gui.py
 ```
 
 빌드된 실행 파일은 `dist/flash_stm8_gui.exe`에 생성됩니다.
